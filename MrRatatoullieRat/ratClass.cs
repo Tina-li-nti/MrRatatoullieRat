@@ -6,8 +6,13 @@ namespace MrRatatoullieRat
     {
         public string name = "Remmy";
         public int soupMaker { get; set; }
-        public int beefSteaker  { get; set; }
-        public int pastaBaker  { get; set; }
-        public int girlfriendTaker  { get; set; }
+        public int beefSteaker { get; set; }
+        public int pastaBaker { get; set; }
+        public int girlfriendTaker { get; set; }
+
+        public int CountPoints()
+        {
+            return soupMaker + beefSteaker + soupMaker + girlfriendTaker;
+        }
     }
 }
